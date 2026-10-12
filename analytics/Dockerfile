@@ -18,4 +18,5 @@ COPY models ./models
 RUN useradd --create-home analytics && mkdir -p /models/hf && chown -R analytics /models /app
 USER analytics
 EXPOSE 8001
-CMD ["uvicorn", "soleglance_analytics.app:app", "--host", "0.0.0.0", "--port", "8001", "--workers", "1"]
+# Fetch the trained model bundle if the models volume is empty, then serve.
+CMD ["sh", "-c", "python -m soleglance_analytics.fetch_models && exec uvicorn soleglance_analytics.app:app --host 0.0.0.0 --port 8001 --workers 1"]

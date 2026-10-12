@@ -15,8 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $email = env('ADMIN_EMAIL', 'admin@soleglance.test');
-        $password = env('ADMIN_PASSWORD');
+        $email = config('soleglance.admin_email');
+        $password = config('soleglance.admin_password');
 
         if (!$password) {
             $password = Str::password(20);

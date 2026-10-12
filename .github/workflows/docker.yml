@@ -1,0 +1,55 @@
+name: Docker
+
+# Every push and pull request proves the production images still build.
+# On main, the analytics image (which needs no per-deployment build settings)
+# is published to GitHub Container Registry.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Lower-case owner for image names
+        run: echo "OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
+
+      - name: Build web app image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: docker/app.Dockerfile
+          target: app
+          push: false
+
+      - name: Build nginx image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: docker/app.Dockerfile
+          target: web
+          push: false
+
+      - name: Log in to GHCR
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build (and on main, publish) analytics image
+        uses: docker/build-push-action@v6
+        with:
+          context: analytics
+          push: ${{ github.event_name == 'push' }}
+          tags: |
+            ghcr.io/${{ env.OWNER }}/soleglance-analytics:latest
+            ghcr.io/${{ env.OWNER }}/soleglance-analytics:${{ github.sha }}

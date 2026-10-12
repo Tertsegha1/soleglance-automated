@@ -149,3 +149,34 @@ class _Constant:
         import numpy as np
 
         return np.tile([0.9, 0.1], (len(X), 1))
+
+
+def test_model_fetcher_verifies_checksum_and_never_overwrites(tmp_path, monkeypatch):
+    import hashlib
+    import io
+    import zipfile
+
+    from soleglance_analytics import fetch_models
+
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("routing.json", "{}")
+        z.writestr("../evil.txt", "nope")
+    data = buf.getvalue()
+
+    class Resp(io.BytesIO):
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+    monkeypatch.setattr(fetch_models.urllib.request, "urlopen", lambda *a, **k: Resp(data))
+    with pytest.raises(RuntimeError):
+        fetch_models.fetch(tmp_path, "http://x", "0" * 64)
+
+    (tmp_path / "routing.json").write_text('{"keep": true}')
+    written = fetch_models.fetch(tmp_path, "http://x", hashlib.sha256(data).hexdigest())
+    assert written == ["evil.txt"] and (tmp_path / "evil.txt").exists()        # flattened into model_dir
+    assert not (tmp_path.parent / "evil.txt").exists()                           # never outside it
+    assert (tmp_path / "routing.json").read_text() == '{"keep": true}'          # existing file kept

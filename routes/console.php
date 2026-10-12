@@ -2,6 +2,7 @@
 
 use App\Jobs\AnalysePendingArticles;
 use App\Jobs\DetectHealthSignals;
+use App\Jobs\RunSystemCheck;
 use App\Jobs\SyncFeedback;
 use App\Jobs\FetchNewsSource;
 use App\Jobs\RefreshTrends;
@@ -25,6 +26,20 @@ Schedule::command('news:fetch')->everyThirtyMinutes()->withoutOverlapping();
 Schedule::job(new RefreshTrends)->hourly();
 Schedule::job(new DetectHealthSignals)->dailyAt('06:00');
 Schedule::job(new SyncFeedback)->hourly();
+Schedule::job(new RunSystemCheck)->everySixHours();
+
+Artisan::command('app:bootstrap', function () {
+    foreach (app(\App\Services\Ops\Bootstrapper::class)->run() as $line) {
+        $this->info($line);
+    }
+})->purpose('First-start automation: wait for the database, migrate, create the first admin and default news sources');
+
+Artisan::command('app:check', function () {
+    $problems = app(\App\Services\Ops\SystemCheck::class)->problems();
+    $problems ? array_map(fn ($p) => $this->warn($p), $problems) : $this->info('All checks passed.');
+
+    return $problems ? 1 : 0;
+})->purpose('Run the operational checks now (analytics, drift, failed jobs, backlog, news sources)');
 Schedule::command('queue:prune-failed --hours=168')->daily();
 
 Artisan::command('health:signals', function () {

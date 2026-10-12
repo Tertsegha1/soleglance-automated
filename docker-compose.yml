@@ -38,7 +38,7 @@ services:
   app:
     <<: *app
     # Cache config, routes and views on start for production performance.
-    command: sh -c "php artisan optimize && exec php-fpm"
+    command: sh -c "php artisan app:bootstrap && php artisan optimize && exec php-fpm"
 
   queue:
     <<: *app

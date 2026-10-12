@@ -28,6 +28,17 @@
             @endif
         </x-card>
     </div>
+    <x-card class="mt-6 p-4">
+        <h2 class="font-semibold mb-2">Automated system check</h2>
+        @if (!$systemCheck)
+            <p class="text-sm text-slate-500">Not run yet (runs every six hours; run now with <code>php artisan app:check</code>).</p>
+        @elseif (empty($systemCheck['problems']))
+            <p class="text-sm text-emerald-700">All checks passed ({{ \Illuminate\Support\Carbon::parse($systemCheck['at'])->diffForHumans() }}).</p>
+        @else
+            <ul class="text-sm text-rose-700 list-disc pl-5">@foreach ($systemCheck['problems'] as $p)<li>{{ $p }}</li>@endforeach</ul>
+        @endif
+    </x-card>
+
     <x-card class="mt-6">
         <h2 class="font-semibold p-4 border-b">Recent moderation</h2>
         @include('admin._actions', ['actions' => $recentActions])
