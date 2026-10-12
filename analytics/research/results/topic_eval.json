@@ -1,0 +1,21 @@
+{
+  "n": 7600,
+  "keywords": {
+    "closed_accuracy": 0.5455263157894736,
+    "closed_macro_f1": 0.6180951471543438,
+    "open_accuracy": 0.5175,
+    "abstain_rate": 0.22986842105263158
+  },
+  "prototypes": {
+    "closed_accuracy": 0.6881578947368421,
+    "closed_macro_f1": 0.6805303804149736,
+    "open_accuracy": 0.4406578947368421,
+    "abstain_rate": 0.3161842105263158
+  },
+  "hybrid": {
+    "closed_accuracy": 0.7373684210526316,
+    "closed_macro_f1": 0.7351505292146259,
+    "open_accuracy": 0.6103947368421052,
+    "abstain_rate": 0.09710526315789474
+  }
+}

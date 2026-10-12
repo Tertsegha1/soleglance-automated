@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "lang": "en",
+      "split": "train",
+      "n": 45615,
+      "negative": 7093,
+      "neutral": 20673,
+      "positive": 17849
+    },
+    {
+      "lang": "en",
+      "split": "validation",
+      "n": 2000,
+      "negative": 312,
+      "neutral": 869,
+      "positive": 819
+    },
+    {
+      "lang": "en",
+      "split": "test",
+      "n": 12284,
+      "negative": 3972,
+      "neutral": 5937,
+      "positive": 2375
+    },
+    {
+      "lang": "ur-Latn",
+      "split": "train",
+      "n": 15592,
+      "negative": 4187,
+      "neutral": 6757,
+      "positive": 4648
+    },
+    {
+      "lang": "ur-Latn",
+      "split": "validation",
+      "n": 1949,
+      "negative": 523,
+      "neutral": 845,
+      "positive": 581
+    },
+    {
+      "lang": "ur-Latn",
+      "split": "test",
+      "n": 1949,
+      "negative": 524,
+      "neutral": 844,
+      "positive": 581
+    },
+    {
+      "lang": "ur",
+      "split": "train",
+      "n": 682,
+      "negative": 348,
+      "neutral": 0,
+      "positive": 334
+    },
+    {
+      "lang": "ur",
+      "split": "validation",
+      "n": 97,
+      "negative": 50,
+      "neutral": 0,
+      "positive": 47
+    },
+    {
+      "lang": "ur",
+      "split": "test",
+      "n": 196,
+      "negative": 100,
+      "neutral": 0,
+      "positive": 96
+    },
+    {
+      "lang": "pcm",
+      "split": "train",
+      "n": 4578,
+      "negative": 2972,
+      "neutral": 66,
+      "positive": 1540
+    },
+    {
+      "lang": "pcm",
+      "split": "validation",
+      "n": 1023,
+      "negative": 667,
+      "neutral": 17,
+      "positive": 339
+    },
+    {
+      "lang": "pcm",
+      "split": "test",
+      "n": 3228,
+      "negative": 1708,
+      "neutral": 429,
+      "positive": 1091
+    }
+  ],
+  "tfidf": [
+    {
+      "C": 0.5,
+      "language_balanced": false,
+      "val_mean_macro_f1": 0.5767457186972567,
+      "per_language": {
+        "en": 0.6743160391243251,
+        "pcm": 0.42019117624189395,
+        "ur": 0.5630630630630631,
+        "ur-Latn": 0.6494125963597446
+      },
+      "fit_seconds": 53.8
+    },
+    {
+      "C": 0.5,
+      "language_balanced": true,
+      "val_mean_macro_f1": 0.5500257421241592,
+      "per_language": {
+        "en": 0.5396192209205452,
+        "pcm": 0.4380323260716796,
+        "ur": 0.607872340425532,
+        "ur-Latn": 0.61457908107888
+      },
+      "fit_seconds": 67.7
+    },
+    {
+      "C": 2.0,
+      "language_balanced": false,
+      "val_mean_macro_f1": 0.586895045955274,
+      "per_language": {
+        "en": 0.6786677989375303,
+        "pcm": 0.43529631615723363,
+        "ur": 0.570750134916352,
+        "ur-Latn": 0.6628659338099799
+      },
+      "fit_seconds": 88.8
+    },
+    {
+      "C": 2.0,
+      "language_balanced": true,
+      "val_mean_macro_f1": 0.5714628134315668,
+      "per_language": {
+        "en": 0.6022961728514672,
+        "pcm": 0.4320268231091402,
+        "ur": 0.607872340425532,
+        "ur-Latn": 0.6436559173401278
+      },
+      "fit_seconds": 85.8
+    },
+    {
+      "C": 8.0,
+      "language_balanced": false,
+      "val_mean_macro_f1": 0.5784485307795493,
+      "per_language": {
+        "en": 0.6640225545416643,
+        "pcm": 0.42957590100267556,
+        "ur": 0.5744248261102194,
+        "ur-Latn": 0.6457708414636377
+      },
+      "fit_seconds": 90.1
+    },
+    {
+      "C": 8.0,
+      "language_balanced": true,
+      "val_mean_macro_f1": 0.5878460699893724,
+      "per_language": {
+        "en": 0.6341935823544494,
+        "pcm": 0.4546380294411491,
+        "ur": 0.61839447102605,
+        "ur-Latn": 0.644158197135841
+      },
+      "fit_seconds": 95.2
+    }
+  ],
+  "embedding": [
+    {
+      "C": 0.25,
+      "language_balanced": false,
+      "val_mean_macro_f1": 0.5268696321381553,
+      "per_language": {
+        "en": 0.6286280926173831,
+        "pcm": 0.41091731806211595,
+        "ur": 0.6200928661882651,
+        "ur-Latn": 0.4478402516848572
+      }
+    },
+    {
+      "C": 0.25,
+      "language_balanced": true,
+      "val_mean_macro_f1": 0.515739177694366,
+      "per_language": {
+        "en": 0.562983088410266,
+        "pcm": 0.42631587734298787,
+        "ur": 0.6451142985208427,
+        "ur-Latn": 0.42854344650336723
+      }
+    },
+    {
+      "C": 1.0,
+      "language_balanced": false,
+      "val_mean_macro_f1": 0.5276141571091881,
+      "per_language": {
+        "en": 0.6328851622152768,
+        "pcm": 0.4158786446020488,
+        "ur": 0.6106782106782107,
+        "ur-Latn": 0.4510146109412165
+      }
+    },
+    {
+      "C": 1.0,
+      "language_balanced": true,
+      "val_mean_macro_f1": 0.5196034597546104,
+      "per_language": {
+        "en": 0.5674973899987176,
+        "pcm": 0.42940882574398165,
+        "ur": 0.6417480035492458,
+        "ur-Latn": 0.439759619726497
+      }
+    },
+    {
+      "C": 4.0,
+      "language_balanced": false,
+      "val_mean_macro_f1": 0.5238589311792923,
+      "per_language": {
+        "en": 0.6333265814645125,
+        "pcm": 0.41175099410393523,
+        "ur": 0.5999121651295565,
+        "ur-Latn": 0.4504459840191648
+      }
+    },
+    {
+      "C": 4.0,
+      "language_balanced": true,
+      "val_mean_macro_f1": 0.5191984099396592,
+      "per_language": {
+        "en": 0.5719679942725358,
+        "pcm": 0.42927992303128254,
+        "ur": 0.6383585692341452,
+        "ur-Latn": 0.4371871532206734
+      }
+    },
+    {
+      "C": 16.0,
+      "language_balanced": false,
+      "val_mean_macro_f1": 0.5289528781336057,
+      "per_language": {
+        "en": 0.6355393606101959,
+        "pcm": 0.4112021945619542,
+        "ur": 0.6135785007072135,
+        "ur-Latn": 0.45549145665505897
+      }
+    },
+    {
+      "C": 16.0,
+      "language_balanced": true,
+      "val_mean_macro_f1": 0.5236536872599556,
+      "per_language": {
+        "en": 0.5731457407500085,
+        "pcm": 0.4290416940144708,
+        "ur": 0.6562126966901791,
+        "ur-Latn": 0.4362146175851644
+      }
+    }
+  ]
+}

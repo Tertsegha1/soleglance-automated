@@ -1,0 +1,58 @@
+{
+  "langid": [
+    {
+      "C": 0.5,
+      "val_macro_f1": 0.9942293524963345
+    },
+    {
+      "C": 2.0,
+      "val_macro_f1": 0.9951647625400123
+    },
+    {
+      "C": 8.0,
+      "val_macro_f1": 0.9960881279779382
+    }
+  ],
+  "routing": {
+    "en": {
+      "validation_macro_f1": {
+        "xlmt": 0.7322890812023234,
+        "afriberta": 0.45058367868408317,
+        "tfidf": 0.6341935823544494,
+        "embedding": 0.6355393606101959,
+        "ensemble": 0.6709203115315169
+      },
+      "chosen": "xlmt"
+    },
+    "ur-Latn": {
+      "validation_macro_f1": {
+        "xlmt": 0.48863438068881054,
+        "afriberta": 0.38178511481448735,
+        "tfidf": 0.644158197135841,
+        "embedding": 0.45549145665505897,
+        "ensemble": 0.6483037829063492
+      },
+      "chosen": "ensemble"
+    },
+    "ur": {
+      "validation_macro_f1": {
+        "xlmt": 0.5525030525030525,
+        "afriberta": 0.04081632653061224,
+        "tfidf": 0.61839447102605,
+        "embedding": 0.6135785007072135,
+        "ensemble": 0.6732215774768966
+      },
+      "chosen": "ensemble"
+    },
+    "pcm": {
+      "validation_macro_f1": {
+        "xlmt": 0.41908934018041516,
+        "afriberta": 0.5483528223912839,
+        "tfidf": 0.4546380294411491,
+        "embedding": 0.4112021945619542,
+        "ensemble": 0.4382512564676908
+      },
+      "chosen": "afriberta"
+    }
+  }
+}

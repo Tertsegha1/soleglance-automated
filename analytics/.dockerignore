@@ -1,0 +1,6 @@
+.venv
+research/cache
+research/results
+research/data
+**/__pycache__
+tests

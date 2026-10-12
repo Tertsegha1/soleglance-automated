@@ -1,0 +1,191 @@
+[
+  {
+    "users": 10,
+    "duration_s": 60.2,
+    "pages": {
+      "feed": {
+        "requests": 687,
+        "errors": 0,
+        "p50_ms": 192.2,
+        "p95_ms": 467.6,
+        "p99_ms": 590.2
+      },
+      "profile": {
+        "requests": 296,
+        "errors": 0,
+        "p50_ms": 176.0,
+        "p95_ms": 390.7,
+        "p99_ms": 525.6
+      },
+      "search": {
+        "requests": 305,
+        "errors": 0,
+        "p50_ms": 187.5,
+        "p95_ms": 423.8,
+        "p99_ms": 571.4
+      },
+      "trending": {
+        "requests": 187,
+        "errors": 0,
+        "p50_ms": 263.5,
+        "p95_ms": 476.6,
+        "p99_ms": 654.3
+      },
+      "topic": {
+        "requests": 317,
+        "errors": 0,
+        "p50_ms": 540.5,
+        "p95_ms": 1027.6,
+        "p99_ms": 1215.1
+      },
+      "notifications": {
+        "requests": 93,
+        "errors": 0,
+        "p50_ms": 64.1,
+        "p95_ms": 190.6,
+        "p99_ms": 244.0
+      },
+      "health": {
+        "requests": 110,
+        "errors": 0,
+        "p50_ms": 213.2,
+        "p95_ms": 457.9,
+        "p99_ms": 529.2
+      }
+    },
+    "overall": {
+      "requests": 1995,
+      "errors": 0,
+      "throughput_rps": 33.1,
+      "p50_ms": 214.0,
+      "p95_ms": 631.5,
+      "share_under_3s": 1.0
+    }
+  },
+  {
+    "users": 25,
+    "duration_s": 60.3,
+    "pages": {
+      "feed": {
+        "requests": 632,
+        "errors": 0,
+        "p50_ms": 562.9,
+        "p95_ms": 1050.6,
+        "p99_ms": 1378.6
+      },
+      "profile": {
+        "requests": 282,
+        "errors": 0,
+        "p50_ms": 538.1,
+        "p95_ms": 917.7,
+        "p99_ms": 1397.3
+      },
+      "search": {
+        "requests": 258,
+        "errors": 0,
+        "p50_ms": 521.7,
+        "p95_ms": 1106.7,
+        "p99_ms": 1787.1
+      },
+      "trending": {
+        "requests": 174,
+        "errors": 0,
+        "p50_ms": 521.9,
+        "p95_ms": 941.8,
+        "p99_ms": 1270.4
+      },
+      "topic": {
+        "requests": 252,
+        "errors": 0,
+        "p50_ms": 1137.2,
+        "p95_ms": 1921.1,
+        "p99_ms": 2489.7
+      },
+      "notifications": {
+        "requests": 86,
+        "errors": 0,
+        "p50_ms": 173.1,
+        "p95_ms": 305.8,
+        "p99_ms": 517.2
+      },
+      "health": {
+        "requests": 90,
+        "errors": 0,
+        "p50_ms": 489.0,
+        "p95_ms": 885.4,
+        "p99_ms": 1095.4
+      }
+    },
+    "overall": {
+      "requests": 1774,
+      "errors": 0,
+      "throughput_rps": 29.4,
+      "p50_ms": 570.6,
+      "p95_ms": 1338.7,
+      "share_under_3s": 1.0
+    }
+  },
+  {
+    "users": 50,
+    "duration_s": 61.0,
+    "pages": {
+      "feed": {
+        "requests": 400,
+        "errors": 0,
+        "p50_ms": 1272.4,
+        "p95_ms": 2208.2,
+        "p99_ms": 3093.9
+      },
+      "profile": {
+        "requests": 164,
+        "errors": 0,
+        "p50_ms": 1182.7,
+        "p95_ms": 1974.8,
+        "p99_ms": 2989.6
+      },
+      "search": {
+        "requests": 200,
+        "errors": 0,
+        "p50_ms": 1198.0,
+        "p95_ms": 1995.0,
+        "p99_ms": 2643.5
+      },
+      "trending": {
+        "requests": 120,
+        "errors": 0,
+        "p50_ms": 1214.8,
+        "p95_ms": 1959.1,
+        "p99_ms": 2108.0
+      },
+      "topic": {
+        "requests": 160,
+        "errors": 0,
+        "p50_ms": 1939.3,
+        "p95_ms": 3060.2,
+        "p99_ms": 3450.2
+      },
+      "notifications": {
+        "requests": 42,
+        "errors": 0,
+        "p50_ms": 870.8,
+        "p95_ms": 1795.4,
+        "p99_ms": 2231.3
+      },
+      "health": {
+        "requests": 79,
+        "errors": 0,
+        "p50_ms": 1182.4,
+        "p95_ms": 2468.7,
+        "p99_ms": 2937.0
+      }
+    },
+    "overall": {
+      "requests": 1165,
+      "errors": 0,
+      "throughput_rps": 19.1,
+      "p50_ms": 1285.4,
+      "p95_ms": 2468.7,
+      "share_under_3s": 0.9871
+    }
+  }
+]

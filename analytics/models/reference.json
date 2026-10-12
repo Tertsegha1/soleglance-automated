@@ -1,0 +1,14 @@
+{
+  "languages": {
+    "en": 2000,
+    "ur-Latn": 1949,
+    "pcm": 1023,
+    "ur": 97
+  },
+  "labels": {
+    "positive": 1786,
+    "neutral": 1731,
+    "negative": 1552
+  },
+  "source": "validation splits used for model selection"
+}

@@ -1,0 +1,508 @@
+{
+  "lassa_nigeria": {
+    "weeks": 307,
+    "period": [
+      "2019-12-30",
+      "2025-11-16"
+    ],
+    "onset_threshold_cases": 21.0,
+    "onset_weeks": [
+      "2020-01-06",
+      "2021-02-22",
+      "2022-01-03",
+      "2023-01-02",
+      "2024-01-01",
+      "2024-12-30"
+    ],
+    "signal_totals": {
+      "en_wikipedia": 661399.0,
+      "ha_wikipedia": 507.0
+    },
+    "correlation": {
+      "en_wikipedia": {
+        "-4": {
+          "spearman": 0.18295954289891136,
+          "p": 0.0013807953674099367
+        },
+        "-3": {
+          "spearman": 0.19937482046062693,
+          "p": 0.00047039513102382105
+        },
+        "-2": {
+          "spearman": 0.18097488512800308,
+          "p": 0.0015042614360908284
+        },
+        "-1": {
+          "spearman": 0.16443671895793996,
+          "p": 0.003922168084875141
+        },
+        "0": {
+          "spearman": 0.14586093643722428,
+          "p": 0.010498444799822582
+        },
+        "1": {
+          "spearman": 0.12918394027781754,
+          "p": 0.023819671973088975
+        },
+        "2": {
+          "spearman": 0.11758668739054418,
+          "p": 0.0401448115102671
+        },
+        "3": {
+          "spearman": 0.09432709182828518,
+          "p": 0.10068627584190137
+        },
+        "4": {
+          "spearman": 0.04776363480814737,
+          "p": 0.4074139655953875
+        }
+      },
+      "ha_wikipedia": {
+        "-4": {
+          "spearman": 0.21824729188244665,
+          "p": 0.00012836691752157338
+        },
+        "-3": {
+          "spearman": 0.2024770013109718,
+          "p": 0.00038139954864205777
+        },
+        "-2": {
+          "spearman": 0.17600609617167534,
+          "p": 0.0020333777069919453
+        },
+        "-1": {
+          "spearman": 0.19556013375284703,
+          "p": 0.0005813282105955922
+        },
+        "0": {
+          "spearman": 0.18583886716516776,
+          "p": 0.0010700873822764119
+        },
+        "1": {
+          "spearman": 0.16859449246612784,
+          "p": 0.003093069616342704
+        },
+        "2": {
+          "spearman": 0.168409560788549,
+          "p": 0.0031759975032556093
+        },
+        "3": {
+          "spearman": 0.16499593056121267,
+          "p": 0.003917271336098379
+        },
+        "4": {
+          "spearman": 0.16236345853060397,
+          "p": 0.004605769074264021
+        }
+      }
+    },
+    "early_warning": {
+      "en_wikipedia": {
+        "c1": {
+          "seasons": 6,
+          "detected": 1,
+          "sensitivity": 0.16666666666666666,
+          "lead_weeks": [
+            0
+          ],
+          "median_lead_weeks": 0.0,
+          "false_alarms": 3,
+          "false_alarms_per_year": 0.5099022801302932,
+          "alert_starts": [
+            60,
+            93,
+            109,
+            136,
+            165,
+            252,
+            271
+          ]
+        },
+        "c2": {
+          "seasons": 6,
+          "detected": 1,
+          "sensitivity": 0.16666666666666666,
+          "lead_weeks": [
+            0
+          ],
+          "median_lead_weeks": 0.0,
+          "false_alarms": 3,
+          "false_alarms_per_year": 0.5099022801302932,
+          "alert_starts": [
+            60,
+            93,
+            109,
+            136,
+            165,
+            252,
+            271
+          ]
+        },
+        "c3": {
+          "seasons": 6,
+          "detected": 1,
+          "sensitivity": 0.16666666666666666,
+          "lead_weeks": [
+            0
+          ],
+          "median_lead_weeks": 0.0,
+          "false_alarms": 4,
+          "false_alarms_per_year": 0.6798697068403909,
+          "alert_starts": [
+            46,
+            60,
+            93,
+            108,
+            136,
+            165,
+            217,
+            252,
+            271
+          ]
+        },
+        "poisson": {
+          "seasons": 6,
+          "detected": 5,
+          "sensitivity": 0.8333333333333334,
+          "lead_weeks": [
+            6,
+            3,
+            -1,
+            -1,
+            -2
+          ],
+          "median_lead_weeks": -1.0,
+          "false_alarms": 16,
+          "false_alarms_per_year": 2.7194788273615638,
+          "alert_starts": [
+            10,
+            39,
+            44,
+            54,
+            59,
+            66,
+            93,
+            102,
+            104,
+            123,
+            133,
+            136,
+            158,
+            187,
+            193,
+            210,
+            216,
+            226,
+            234,
+            248,
+            252,
+            263,
+            270,
+            287,
+            297,
+            302
+          ]
+        }
+      },
+      "ha_wikipedia": {
+        "c1": {
+          "seasons": 6,
+          "detected": 2,
+          "sensitivity": 0.3333333333333333,
+          "lead_weeks": [
+            1,
+            -2
+          ],
+          "median_lead_weeks": -0.5,
+          "false_alarms": 4,
+          "false_alarms_per_year": 0.6798697068403909,
+          "alert_starts": [
+            138,
+            184,
+            199,
+            208,
+            216,
+            263,
+            296
+          ]
+        },
+        "c2": {
+          "seasons": 6,
+          "detected": 2,
+          "sensitivity": 0.3333333333333333,
+          "lead_weeks": [
+            5,
+            1
+          ],
+          "median_lead_weeks": 3.0,
+          "false_alarms": 3,
+          "false_alarms_per_year": 0.5099022801302932,
+          "alert_starts": [
+            138,
+            152,
+            184,
+            208,
+            210,
+            216,
+            267,
+            296
+          ]
+        },
+        "c3": {
+          "seasons": 6,
+          "detected": 2,
+          "sensitivity": 0.3333333333333333,
+          "lead_weeks": [
+            5,
+            1
+          ],
+          "median_lead_weeks": 3.0,
+          "false_alarms": 4,
+          "false_alarms_per_year": 0.6798697068403909,
+          "alert_starts": [
+            138,
+            152,
+            184,
+            208,
+            216,
+            264,
+            281,
+            296
+          ]
+        },
+        "poisson": {
+          "seasons": 6,
+          "detected": 2,
+          "sensitivity": 0.3333333333333333,
+          "lead_weeks": [
+            5,
+            1
+          ],
+          "median_lead_weeks": 3.0,
+          "false_alarms": 3,
+          "false_alarms_per_year": 0.5099022801302932,
+          "alert_starts": [
+            138,
+            152,
+            167,
+            184,
+            208,
+            216,
+            296
+          ]
+        }
+      }
+    },
+    "early_warning_on_official_counts": {
+      "c1": {
+        "seasons": 6,
+        "detected": 5,
+        "sensitivity": 0.8333333333333334,
+        "lead_weeks": [
+          0,
+          2,
+          5,
+          1,
+          5
+        ],
+        "median_lead_weeks": 2.0,
+        "false_alarms": 4,
+        "false_alarms_per_year": 0.6798697068403909,
+        "alert_starts": [
+          33,
+          60,
+          103,
+          105,
+          148,
+          152,
+          157,
+          202,
+          208,
+          256,
+          306
+        ]
+      },
+      "c2": {
+        "seasons": 6,
+        "detected": 5,
+        "sensitivity": 0.8333333333333334,
+        "lead_weeks": [
+          5,
+          2,
+          5,
+          2,
+          5
+        ],
+        "median_lead_weeks": 5.0,
+        "false_alarms": 3,
+        "false_alarms_per_year": 0.5099022801302932,
+        "alert_starts": [
+          33,
+          55,
+          60,
+          103,
+          148,
+          152,
+          157,
+          202,
+          207,
+          256,
+          262
+        ]
+      },
+      "c3": {
+        "seasons": 6,
+        "detected": 4,
+        "sensitivity": 0.6666666666666666,
+        "lead_weeks": [
+          5,
+          2,
+          5,
+          5
+        ],
+        "median_lead_weeks": 5.0,
+        "false_alarms": 4,
+        "false_alarms_per_year": 0.6798697068403909,
+        "alert_starts": [
+          33,
+          43,
+          55,
+          60,
+          103,
+          148,
+          152,
+          157,
+          202,
+          217,
+          256
+        ]
+      },
+      "poisson": {
+        "seasons": 6,
+        "detected": 5,
+        "sensitivity": 0.8333333333333334,
+        "lead_weeks": [
+          0,
+          2,
+          5,
+          4,
+          5
+        ],
+        "median_lead_weeks": 4.0,
+        "false_alarms": 4,
+        "false_alarms_per_year": 0.6798697068403909,
+        "alert_starts": [
+          33,
+          41,
+          60,
+          103,
+          109,
+          148,
+          152,
+          157,
+          202,
+          205,
+          207,
+          213,
+          216,
+          256
+        ]
+      }
+    },
+    "nowcast": {
+      "en_wikipedia": {
+        "weeks_evaluated": 255,
+        "mae_cases_signal_model": 13.72889458376933,
+        "mae_cases_two_week_old_count": 9.541176470588235,
+        "mae_cases_same_week_last_year": 12.537254901960784,
+        "spearman_signal_model": 0.0556233783609705
+      },
+      "ha_wikipedia": {
+        "weeks_evaluated": 255,
+        "mae_cases_signal_model": 14.176128903271078,
+        "mae_cases_two_week_old_count": 9.541176470588235,
+        "mae_cases_same_week_last_year": 12.537254901960784,
+        "spearman_signal_model": 0.08508823875444796
+      }
+    }
+  },
+  "dengue_pakistan": {
+    "article": "\u0688\u06cc\u0646\u06af\u06cc_\u0628\u062e\u0627\u0631",
+    "national": {
+      "weeks": 20,
+      "period": [
+        "2017-07-09",
+        "2017-11-25"
+      ],
+      "total_cases": 24685.0,
+      "correlation": {
+        "-3": {
+          "spearman": 0.2244022494131503,
+          "p": 0.3865559219121254
+        },
+        "-2": {
+          "spearman": 0.3262777925774193,
+          "p": 0.1863641777778631
+        },
+        "-1": {
+          "spearman": 0.5686705242488701,
+          "p": 0.011063519336289377
+        },
+        "0": {
+          "spearman": 0.7544190078455887,
+          "p": 0.00012144684679400082
+        },
+        "1": {
+          "spearman": 0.677490192469333,
+          "p": 0.0014378624315879406
+        },
+        "2": {
+          "spearman": 0.7151702786377709,
+          "p": 0.0008492395538531117
+        },
+        "3": {
+          "spearman": 0.36764705882352944,
+          "p": 0.14655429178401475
+        }
+      }
+    },
+    "sindh": {
+      "weeks": 29,
+      "period": [
+        "2021-08-01",
+        "2022-04-23"
+      ],
+      "total_cases": 2413.0,
+      "correlation": {
+        "-3": {
+          "spearman": 0.23145478943790296,
+          "p": 0.255253201862407
+        },
+        "-2": {
+          "spearman": 0.334302197665944,
+          "p": 0.08832123370741224
+        },
+        "-1": {
+          "spearman": 0.2580606369828254,
+          "p": 0.18488622851275766
+        },
+        "0": {
+          "spearman": 0.4990750439141003,
+          "p": 0.005850748334473896
+        },
+        "1": {
+          "spearman": 0.6965719292284941,
+          "p": 3.830579379144095e-05
+        },
+        "2": {
+          "spearman": 0.7406293419966462,
+          "p": 9.98737528812356e-06
+        },
+        "3": {
+          "spearman": 0.5565665665518155,
+          "p": 0.003147863478645757
+        }
+      }
+    }
+  }
+}

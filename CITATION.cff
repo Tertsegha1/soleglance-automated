@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SoleGlance: a multilingual, privacy-preserving social platform for sentiment, trend and public-health signal analytics"
+version: 2.0.0
+date-released: 2026-10-12
+license: MIT
+repository-code: "https://github.com/Tertsegha1/soleglance-automated"
+authors:
+  - family-names: Younas
+    given-names: Suzana
+  - family-names: Anande
+    given-names: Tertsegha
+references:
+  - type: thesis
+    title: "SoleGlance"
+    thesis-type: "BS Software Engineering final-year project dissertation"
+    institution:
+      name: "Faculty of Computing, Riphah International University, Islamabad"
+    year: 2022
